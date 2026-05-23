@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c7wxiylqww347" path="res://world/bush.tscn" id="3_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://fvc3sumpr51" path="res://world/tree.tscn" id="4_036b0"]
 [ext_resource type="PackedScene" uid="uid://w07x1n4rho7b" path="res://world/grass.tscn" id="7_ioo17"]
+[ext_resource type="PackedScene" uid="uid://b0vne5gvwqk6j" path="res://enemies/bat_enemy.tscn" id="8_gbfbk"]
 
 [node name="World" type="Node2D" unique_id=1037951334]
 y_sort_enabled = true
@@ -88,3 +89,25 @@ position = Vector2(374, 144)
 
 [node name="Grass4" parent="." unique_id=242456353 instance=ExtResource("7_ioo17")]
 position = Vector2(214, 279)
+
+[node name="Grass5" parent="." unique_id=44194997 instance=ExtResource("7_ioo17")]
+position = Vector2(93, 64)
+
+[node name="Grass6" parent="." unique_id=843049188 instance=ExtResource("7_ioo17")]
+position = Vector2(110, 64)
+metadata/_edit_group_ = true
+
+[node name="Grass7" parent="." unique_id=554281369 instance=ExtResource("7_ioo17")]
+position = Vector2(93, 84)
+
+[node name="Grass8" parent="." unique_id=613820879 instance=ExtResource("7_ioo17")]
+position = Vector2(110, 84)
+
+[node name="Grass9" parent="." unique_id=179298900 instance=ExtResource("7_ioo17")]
+position = Vector2(93, 105)
+
+[node name="BatEnemy" parent="." unique_id=133182215 instance=ExtResource("8_gbfbk")]
+position = Vector2(85, 224)
+
+[node name="BatEnemy2" parent="." unique_id=136523672 instance=ExtResource("8_gbfbk")]
+position = Vector2(345, 148)

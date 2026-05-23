@@ -1,11 +1,15 @@
 extends Node2D
 
+const GRASS_EFFECT = preload("res://effects/grass_effect.tscn")
 
-# Called when the node enters the scene tree for the first time.
+@export var area_2d: Area2D
+
+
 func _ready() -> void:
-	pass # Replace with function body.
+	area_2d.area_entered.connect(_on_area_2d_area_entered)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_area_2d_area_entered(other_area_2d: Area2D) -> void:
+	var grass_effect = GRASS_EFFECT.instantiate()
+	get_tree().current_scene.add_child(grass_effect)
+	grass_effect.global_position = global_position
+	queue_free()
