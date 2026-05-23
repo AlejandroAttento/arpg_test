@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://w07x1n4rho7b"]
+
+[ext_resource type="Texture2D" uid="uid://d0th27xkitt8p" path="res://world/grass.png" id="1_44d1o"]
+
+[node name="Grass" type="Node2D" unique_id=1919415494]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1890317877]
+position = Vector2(-16, -13)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1721945332]
+position = Vector2(-16, -8)
+texture = ExtResource("1_44d1o")
+offset = Vector2(16, 16)
